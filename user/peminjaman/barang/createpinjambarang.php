@@ -90,12 +90,13 @@
 
 								<div class="form-group">
 									<label>Tgl Mulai Pinjam</label>
-									<input type="text" readonly="" name="tgl_mulai" class="form-control" value="<?php echo date('Y-m-d') ?>">
+									<input type="text" readonly="" name="tgl_mulai" class="form-control" value="<?php date_default_timezone_set("Asia/Jakarta");
+																												echo date('Y-m-d H:i:s') ?>">
 								</div>
 
 								<div class="form-group">
 									<label>Tgl Selesai Pinjam</label>
-									<input type="date" name="tgl_selesai" class="form-control">
+									<input type="datetime-local" name="tgl_selesai" class="form-control">
 								</div>
 
 								<div class="form-group">
